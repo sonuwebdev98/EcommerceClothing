@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.9rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.heading-one {
+  font-size: 5.2rem;
+  font-weight: bolder;
+  font-family: "Raleway", sans-serif;
+}
+
+.parimary-btn {
+  background-color: #004CFF;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.2rem;
+  padding: 1.7rem 8.8rem;
+  font-weight: lighter;
+  border-radius: 20px;
+}
+.parimary-btn:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease-in;
+}
+
+.shop-parent-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.shop-parent-section .shop-child-section {
+  width: 100%;
+  max-width: 375px;
+  background-color: #fff;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+.shop-parent-section .shop-child-section .top_notification_area {
+  padding: 13px 21px;
+}
+.shop-parent-section .shop-child-section .top_notification_area .notification_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.shop-parent-section .shop-child-section .top_notification_area .notification_area .notifi_both_area {
+  width: 48.5%;
+}
+.shop-parent-section .shop-child-section .top_notification_area .notification_area .notifi_right_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.shop-parent-section .shop-child-section .top_notification_area .notification_area .notifi_right_area .wifi_notifi {
+  padding: 0px 5px;
+}
+.shop-parent-section .shop-child-section .center-content-section {
+  padding-top: 18.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.shop-parent-section .shop-child-section .center-content-section .Bag_Backet {
+  width: 100%;
+  max-width: 134px;
+  height: 134px;
+  padding: 21px 18px 18px 18px;
+  border-radius: 50%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.shop-parent-section .shop-child-section .center-content-section .center-text {
+  padding: 2.4rem 0 1.8rem 0;
+}
+.shop-parent-section .shop-child-section .center-content-section .bottom-para-section {
+  padding-bottom: 10.7rem;
+}
+.shop-parent-section .shop-child-section .center-content-section .bottom-para-section .btm-para-section {
+  padding: 0 6.3rem;
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+.shop-parent-section .shop-child-section .center-content-section .btn-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shop-parent-section .shop-child-section .center-content-section .btn-section .top-btns {
+  padding-bottom: 2.4rem;
+}
+.shop-parent-section .shop-child-section .center-content-section .btn-section .top-btns .start-btn:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease-in;
+}
+.shop-parent-section .shop-child-section .center-content-section .btn-section .btm-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 5.6rem;
+}
+.shop-parent-section .shop-child-section .center-content-section .btn-section .btm-btns .alr-ac-btn {
+  padding-right: 1.6rem;
+}
+.shop-parent-section .shop-child-section .center-content-section .btn-section .btm-btns .alr-ac-btn .alr-ac-btn-link {
+  font-size: 1.5rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: lighter;
+  color: #000;
+}
+.shop-parent-section .shop-child-section .center-content-section .btn-section .btm-btns .next-arrow-btn .arrow-btn-links .arrow-btn-icons {
+  background-color: #004CFF;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 50%;
+}
+.shop-parent-section .shop-child-section .center-content-section .btn-section .btm-btns .next-arrow-btn .arrow-btn-links .arrow-btn-icons:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease-in;
+}
+
+.top_create_account {
+  margin-top: 78px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid blue;
+}
+.top_create_account .create_an_acc {
+  width: 75%;
+  border: 1px solid red;
+}
+.top_create_account .create_an_acc .create_acc_text {
+  padding-left: 3rem;
+}
+.top_create_account .bg_canvas {
+  width: 25%;
+  border: 1px solid green;
+}
+.top_create_account .bg_canvas .bubble_img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 360px) {
+  .parimary-btn {
+    font-size: 2rem;
+    padding: 1.7rem 6rem;
+  }
+  .heading-one {
+    font-size: 5rem;
+  }
+  .shop-parent-section .shop-child-section .center-content-section .bottom-para-section .btm-para-section {
+    padding: 0 4rem;
+  }
+}/*# sourceMappingURL=style.css.map */

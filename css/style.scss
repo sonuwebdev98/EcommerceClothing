@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;    
+  }
+
+
+
+
+// variables
+$primary-color:#004CFF;
+$light-color:#fff;
+$dark-color:#000;
+$grey-color:#707070;
+$light-grey-color:#F8F8F8;
+$Orange-color:#EC4E4E;
+$Light-Pink-color:#FFEBEB;
+$Pink-color:#FF5790;
+
+// fonts Variables 
+$primary-fonts:"Raleway", sans-serif;
+$Secondary-fonts:"Nunito Sans", sans-serif; 
+
+// mixin 
+
+@mixin D-flex(){
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+@mixin center-items(){
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+a{
+    text-decoration: none;
+}
+  
+p{
+    font-size: 1.9rem;
+    font-family: $Secondary-fonts;
+}
+
+// heading 
+
+.heading-one{
+    font-size: 5.2rem;
+    font-weight: bolder;
+    font-family: $primary-fonts;
+}
+
+
+// btns 
+
+.parimary-btn{
+    background-color: $primary-color;
+    color: $light-color;
+    font-family: $Secondary-fonts;
+    font-size:2.2rem;
+    padding:1.7rem 8.8rem;
+    font-weight: lighter;  
+    border-radius: 20px; 
+
+    &:hover{
+        opacity: 0.9;
+        transition: all 0.3s ease-in;
+    }
+}
+    
+.shop-parent-section {   
+    @include center-items();
+    width: 100%;
+    height: 100vh;
+    // background-color: rebeccapurple; 
+
+    .shop-child-section{
+        width: 100%; 
+        max-width:375px;  
+        background-color: $light-color; 
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.5);
+        
+
+        .top_notification_area{
+            padding: 13px 21px;
+            // border: 1px solid rebeccapurple;
+
+            .notification_area{
+                @include center-items();
+                flex-direction: row; 
+
+                .notifi_both_area{ 
+                    width: 48.5%;
+                    // border: 1px solid red;
+                }
+
+                .notifi_right_area{
+                    // border: 1px solid yellow;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+
+                    .wifi_notifi{
+                        padding:0px 5px;
+                    }
+                }
+            }
+        }
+
+     
+        .center-content-section{ 
+            padding-top: 18.8rem;
+            @include center-items();
+            flex-direction: column;
+           
+
+            // .logo-section{
+            //     width: 100%;
+            //     max-width: 134px;
+            //     height: 134px;
+               
+            // }
+
+            .Bag_Backet{
+                width: 100%;
+                max-width: 134px;
+                height: 134px;
+                padding:21px  18px 18px 18px; 
+                border-radius: 50%;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            }
+
+         
+            .center-text{
+                padding: 2.4rem 0 1.8rem 0;
+                
+                
+            }
+
+            .bottom-para-section{
+                padding-bottom: 10.7rem;
+
+                .btm-para-section{
+                    padding: 0 6.3rem;
+                    text-align-last: center;
+                }
+            }
+
+            .btn-section{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .top-btns{
+                    padding-bottom: 2.4rem;
+
+                  .start-btn{
+                    &:hover{
+                        opacity: 0.9;
+                        transition: all 0.3s ease-in;
+                    }
+                  }
+                    
+                }
+
+                .btm-btns{
+                    @include center-items();
+                    flex-direction: row;
+                    padding-bottom: 5.6rem;
+
+                    .alr-ac-btn{
+                        padding-right: 1.6rem;
+
+                        .alr-ac-btn-link{
+                            font-size: 1.5rem;
+                            font-family: $Secondary-fonts;
+                            font-weight: lighter;
+                            color: $dark-color;
+                            
+                        }
+                    }
+
+                  .next-arrow-btn{
+
+                    .arrow-btn-links{
+                        .arrow-btn-icons{ 
+                         background-color: $primary-color;
+                         color: $light-color;
+                         font-size: 1.5rem;
+                         padding: 10px;
+                         border-radius: 50%;
+
+                         &:hover{
+                            opacity: 0.9;
+                            transition: all 0.3s ease-in;
+                        }
+                         
+                      
+                        }
+                    }
+                  }
+
+                }
+            }
+        }
+
+    }
+    
+   
+} 
+
+
+@import"create_account";
+
+
+// External CSS File 
+
+// @import "media";
+@media only screen and (max-width: 360px) {
+
+    .parimary-btn{    
+        font-size:2rem;
+        padding:1.7rem 6rem;
+      
+    }
+
+    .heading-one {
+        font-size: 5rem;
+    }
+      
+
+    .shop-parent-section .shop-child-section .center-content-section .bottom-para-section .btm-para-section {
+        padding: 0 4rem;
+   
+    }
+
+
+
+    } 

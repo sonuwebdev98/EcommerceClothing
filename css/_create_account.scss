@@ -1,0 +1,29 @@
+
+.top_create_account{
+ margin-top: 78px;
+ @include D-flex();
+ border: 2px solid blue;
+
+    .create_an_acc{
+  
+        width: 75%;
+        border: 1px solid red;
+
+        .create_acc_text{
+           padding-left: 3rem;
+        }
+          
+    }
+
+    .bg_canvas{
+        width: 25%;
+        border: 1px solid green;
+
+        .bubble_img{
+            width: 100%;
+        }
+    }  
+ 
+} 
+
+  
